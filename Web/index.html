@@ -1,0 +1,49 @@
+<html>
+	<head>
+		<!--<script src="https://d3js.org/d3.v5.min.js"></script>-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.2.2/d3.v3.min.js"></script>
+		<script src="epoch-0.8.4/dist/js/epoch.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="epoch-0.8.4/dist/css/epoch.min.css">
+	</head>
+	<body>
+		<div id="barChart" class="epoch category10" style="width:320px; height: 240px;"></div>
+		<button id="updateMessage" onclick="updateGraph()">update chart</button>
+		<script>
+			///////////////this function generates the date and time in milliseconds//////////
+			function getTimeValue() {
+			  var dateBuffer = new Date();
+			  var Time = dateBuffer.getTime();
+			  return Time;
+			}
+
+			////////////// this function generates a random value ////////////////////////////
+			function getRandomValue() {
+			  var randomValue = Math.random() * 100;
+			  return randomValue;
+			}
+
+			////////////// this function is used to update the chart values ///////////////	
+			function updateGraph() {
+			  var newBarChartData = [{time: getTimeValue(), y: getRandomValue()}];
+
+			  barChartInstance.push(newBarChartData);
+			}
+
+			////////////// real time graph generation////////////////////////////////////////	  
+			var barChartData = [{
+			  label: "Series 1",
+			  values: [{
+				time: getTimeValue(),
+				y: getRandomValue()
+			  }]
+			}, ];
+
+			var barChartInstance = $('#barChart').epoch({
+			  type: 'time.bar',
+			  axes: ['right', 'bottom', 'left'],
+			  data: barChartData
+			});
+		</script>
+	</body>
+</html>
