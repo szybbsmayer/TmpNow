@@ -10,27 +10,27 @@
 		<div id="barChart" class="epoch category10" style="width:320px; height: 240px;"></div>
 		<button id="updateMessage" onclick="updateGraph()">update chart</button>
 		<script>
-			///////////////this function generates the date and time in milliseconds//////////
+			//Generiert Datum und Zeit in Millisekunden
 			function getTimeValue() {
 			  var dateBuffer = new Date();
 			  var Time = dateBuffer.getTime();
 			  return Time;
 			}
 
-			////////////// this function generates a random value ////////////////////////////
+			//Generiert einen zufälligen Wert
 			function getRandomValue() {
 			  var randomValue = Math.random() * 100;
 			  return randomValue;
 			}
 
-			////////////// this function is used to update the chart values ///////////////	
+			//Updatet die Werte im Graphen
 			function updateGraph() {
 			  var newBarChartData = [{time: getTimeValue(), y: getRandomValue()}];
 
 			  barChartInstance.push(newBarChartData);
 			}
 
-			////////////// real time graph generation////////////////////////////////////////	  
+			//Real-Time generierung des Graphen  
 			var barChartData = [{
 			  label: "Series 1",
 			  values: [{
