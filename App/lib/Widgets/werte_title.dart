@@ -1,20 +1,18 @@
 import 'package:flutter/material.dart';
-import '../models/Werte.dart';
+import 'package:first_flatter_app/models/werte.dart';
 
 class WerteTile extends StatelessWidget {
   final Werte _werte;
-  WerteTile(this._Werte);
+  WerteTile(this._werte);
 
   @override
   Widget build(BuildContext context) => Column(
     children: <Widget>[
       ListTile(
-        title: Text(_werte.),
-        subtitle: Text(_werte.),
-        leading: Container(
-            margin: EdgeInsets.only(left: 6.0),
-            child: Image.network(_beer.image_url, height: 50.0, fit: BoxFit.fill,)
-        ),
+        title: Text('Werte Nr.'+_werte.id.toString()),
+        subtitle: Text('Temperatur:'+_werte.temp+'Luftdruck:'+ _werte.pressure+'Luftfeuchtigkeit:'+ _werte.humidity),
+        //subtitle: Text('Gerät' +_werte.device +'Datum'+_werte.date),
+
       ),
       Divider()
     ],

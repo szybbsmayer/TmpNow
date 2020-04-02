@@ -1,6 +1,6 @@
 import 'package:http/http.dart' as http;
 import 'dart:convert';
-import 'package:first_flatter_app/Models/Werte.dart';
+import 'package:first_flatter_app/models/werte.dart';
 
 Future<Stream<Werte>> getWerte() async{
   final String url='https://github.com/szybbsmayer/TmpNow/blob/master/Backend/src/index.php';
