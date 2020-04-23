@@ -1,0 +1,5 @@
+GET: 127.0.0.1/index.php/get/tmp/current?device=ESP8266_1
+Response:
+{
+    "temperature": 23.6
+}

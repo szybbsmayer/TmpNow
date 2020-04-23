@@ -1,0 +1,9 @@
+GET: 127.0.0.1/index.php/get/current?device=ESP8266_1
+Response:
+{
+    "time": "2020-03-05T08:16:24.433636857Z",
+    "device": "ESP8266_1",
+    "humidity": 36.09,
+    "pressure": 982.87,
+    "temperature": 23.6
+}

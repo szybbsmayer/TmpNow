@@ -1,0 +1,5 @@
+GET: 127.0.0.1/index.php/get/p/current?device=ESP8266_1
+Response:
+{
+    "pressure": 982.87
+}

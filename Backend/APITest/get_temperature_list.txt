@@ -1,0 +1,36 @@
+GET: 127.0.0.1/index.php/get/tmp/list?device="test"&starttime=2020-03-26T07:04:00Z&endtime=2020-03-26T07:50:00Z
+Response: 
+{
+    "temperature": [
+        {
+            "time": "2020-03-26T07:43:57.391535938Z",
+            "device": "\"test\"",
+            "temperature": 23.3
+        },
+        {
+            "time": "2020-03-26T07:44:05.564857027Z",
+            "device": "\"test\"",
+            "temperature": 23.4
+        },
+        {
+            "time": "2020-03-26T07:44:07.407525605Z",
+            "device": "\"test\"",
+            "temperature": 23.5
+        },
+        {
+            "time": "2020-03-26T07:44:08.917422898Z",
+            "device": "\"test\"",
+            "temperature": 23.6
+        },
+        {
+            "time": "2020-03-26T07:44:10.40039929Z",
+            "device": "\"test\"",
+            "temperature": 23.7
+        },
+        {
+            "time": "2020-03-26T07:44:13.488393063Z",
+            "device": "\"test\"",
+            "temperature": 23.8
+        }
+    ]
+}

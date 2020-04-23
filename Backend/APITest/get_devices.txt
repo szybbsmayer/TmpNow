@@ -1,0 +1,16 @@
+GET: 127.0.0.1/index.php/get/devices
+Response:
+[
+    {
+        "key": "device",
+        "value": "\"test\""
+    },
+    {
+        "key": "device",
+        "value": "ESP8266_1"
+    },
+    {
+        "key": "device",
+        "value": "device0"
+    }
+]
